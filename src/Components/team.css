@@ -1,0 +1,99 @@
+.team-box {
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+.team-box:before {
+  content: "";
+  display: block;
+  border: 30px solid hsla(0, 0%, 100%, 0.3);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  opacity: 1;
+  z-index: 2;
+  transition: all 1s ease 0s;
+}
+.team-box .box-content {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  bottom: 45px;
+  right: 45px;
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.team-box:after {
+  content: "";
+  display: block;
+  border: 10px solid hsla(0, 0%, 100%, 0.7);
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  bottom: 35px;
+  right: 35px;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+}
+.team-box img {
+  min-height: "300px"!important;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  vertical-align: middle;
+}
+.team-box .box-inner-content {
+  width: 100%;
+  padding-bottom: 20px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+.team-box:hover:before {
+  border: 1px solid hsla(0, 0%, 100%, 0.18);
+}
+.team-box:hover .box-content {
+  top: 6px;
+  left: 6px;
+  bottom: 6px;
+  right: 6px;
+}
+.team-box:hover img {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+}
+.team-box:hover:after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.team-box:hover .box-inner-content {
+  opacity: 1;
+}
+.team-box .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.team-box .icon li a:hover {
+  color: #fff !important;
+  border-radius: 50%;
+}

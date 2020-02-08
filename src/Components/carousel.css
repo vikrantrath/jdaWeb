@@ -1,0 +1,20 @@
+.carousel-slide-item {
+  background-size: cover;
+  background-position: 50%;
+  background-color: #ddd;
+  height: 700px;
+  font-size: 15px;
+}
+.carousel-slide-item:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(98, 0, 238,.8);
+}
+.carousel-slide-item p{
+  opacity: 1!important;
+  color: white!important;
+  z-index: 999;
+  font-family: sans-serif;
+}

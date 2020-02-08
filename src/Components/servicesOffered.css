@@ -1,0 +1,29 @@
+.servicesCard:hover {
+  background-color: #6200ee;
+  color: #ffffff;
+}
+
+.servicesCard:hover i {
+  color: #ffffff;
+}
+.servicesCard {
+  color: #6c757d;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+.cool-link {
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: white;
+  transition: width 0.5s ease;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}

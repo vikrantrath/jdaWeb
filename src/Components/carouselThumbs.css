@@ -1,0 +1,49 @@
+.owl-thumb-item {
+  display: inline-block;
+  border: none;
+  max-width: 360px;
+  margin: 0 15px;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  padding: 18px;
+  border-radius: 10px;
+  position: relative;
+  color: #848484;
+  transition: transform 0.4s ease-out;
+  transform: translateX(0) rotate(0deg) scale(1);
+}
+
+.owl-thumb-item:hover,
+.owl-thumb-item:active {
+  display: inline-block;
+  border: none;
+  max-width: 360px;
+  margin: 0 15px;
+  cursor: pointer;
+  background-color: #6200ee;
+  padding: 18px;
+  border-radius: 10px;
+  position: relative;
+  color: #ffffff;
+  transform: translateX(0) rotate(-11deg) scale(0.95);
+}
+
+.owl-thumb-item i {
+  color: #6200ee;
+  font-size: 60px;
+}
+
+.owl-thumb-item:hover i {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.carouselThumbdiv {
+  position: absolute;
+  bottom: -175px;
+  left: 0;
+  display: table;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+}
